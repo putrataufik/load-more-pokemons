@@ -1,0 +1,35 @@
+.PokemonList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .PokemonCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Jarak antar kartu */
+  }
+  
+  .Card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 150px; /* Lebar kartu */
+    /* Tambahan gaya lainnya */
+  }
+  
+  .PokemonImage {
+    width: 100px; /* Ukuran gambar */
+    height: 100px;
+  }
+  
+  .LoadMoreButton{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }

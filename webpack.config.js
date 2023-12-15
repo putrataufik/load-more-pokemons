@@ -8,16 +8,18 @@ module.exports = {
     path: path.resolve(__dirname, "build"),
   },
   module: {
-    // exclude node_modules
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader", "postcss-loader"],
+      },
     ],
   },
-  // pass all js files through Babel
   resolve: {
     extensions: ["*", ".js", ".jsx"],
   },
